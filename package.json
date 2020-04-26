@@ -1,0 +1,20 @@
+{
+  "name": "steam-avatar",
+  "version": "0.1.0",
+  "description": "Resolves Steam avatars",
+  "main": "src/index.ts",
+  "repository": "git@github.com:lolPants/steam-avatar.git",
+  "author": "Jack Baron <jackmbaron@gmail.com> (https://www.jackbaron.com)",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {
+    "@now/node": "^1.5.1",
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "typescript": "^3.8.3"
+  }
+}
