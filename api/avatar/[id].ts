@@ -6,6 +6,12 @@ const BASE_URL =
   'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002'
 
 export default async (req: NowRequest, res: NowResponse) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  )
+
   if (STEAM_KEY === undefined) {
     res.setHeader('Content-Type', 'text/plain')
     return res.status(500).send('Internal Server Error')
